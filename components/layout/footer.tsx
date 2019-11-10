@@ -19,11 +19,7 @@ export const Footer = () => {
           {`${new Date().getFullYear()} Company Inc. All Rights Reserved`}
         </span>
         <div className="float-right">
-          <a
-            href="https://github.com/martindavid/nextjs-contentful-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/" target="_blank" rel="noopener noreferrer">
             Github
           </a>
         </div>

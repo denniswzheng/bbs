@@ -45,6 +45,7 @@ export default class CustomDocument extends Document {
             crossOrigin="anonymous"
           />
           <link rel="stylesheet" href="/static/styles/style.css" />
+          <link rel="icon" href="/static/favicon.png" />
         </Head>
         <body>
           <Main />

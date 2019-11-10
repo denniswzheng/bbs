@@ -31,3 +31,5 @@ const nextConfig = {
 
 // next.config.js
 module.exports = withPlugins([withCss], nextConfig);
+
+// CONTENTFUL_SPACE_ID=0tv6l955o4xy CONTENTFUL_ACCESS_TOKEN=AEx-7BVn-GrZJqjf97MqvhfWgqWCq3MJYuKywOb2tMg npm run

@@ -4,20 +4,20 @@ import NProgress from "nprogress";
 import { DefaultSeo } from "next-seo";
 
 const DEFAULT_SEO = {
-  title: "Blog Tutorial Web",
-  description: "Awesome blog tutorial website",
+  title: "Big Bank Sports",
+  description: "Awesome Sports Site",
   openGraph: {
     type: "website",
     locale: "en",
     title: "Blog Tutorial website",
-    description: "Awesome blog tutorial website",
+    description: "Awesome Sports Site",
     site_name: "BlogTutorial"
   }
 };
 
 export default class CustomApp extends App {
   componentDidMount() {
-    Router.events.on("routeChangeComplete", () => {
+    Router.events.on("routeChangeStart", () => {
       NProgress.start();
     });
 
