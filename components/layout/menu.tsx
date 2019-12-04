@@ -13,6 +13,11 @@ export const Menu = () => {
       <NavItem>
         <NavLink href="/blog">Blog</NavLink>
       </NavItem>
+      <NavItem>
+        <Link href="/podcast">
+          <NavLink>Podcast</NavLink>
+        </Link>
+      </NavItem>
     </Nav>
-  );
-};
+  )
+}

@@ -40,7 +40,7 @@ export default class CustomApp extends App {
     return (
       <>
         <DefaultSeo {...DEFAULT_SEO} />
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </>
     );
   }

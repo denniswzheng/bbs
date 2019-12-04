@@ -7,6 +7,7 @@ export class BlogApi {
 
   constructor() {
     this.client = createClient({
+      // Contentful API Keys
       space: "0tv6l955o4xy",
       accessToken: "AEx-7BVn-GrZJqjf97MqvhfWgqWCq3MJYuKywOb2tMg"
     });
@@ -65,7 +66,8 @@ export class BlogApi {
   async fetchBlogEntries(): Promise<Array<BlogPost>> {
     return await this.client
       .getEntries({
-        content_type: "blogPost" // only fetch blog post entry
+        // only fetch blog post entry
+        content_type: "blogPost"
       })
       .then(entries => {
         if (entries && entries.items && entries.items.length > 0) {

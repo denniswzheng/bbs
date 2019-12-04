@@ -10,7 +10,7 @@ type BlogDetailPageProps = {
 
 export default class BlogDetailPage extends React.Component<
   BlogDetailPageProps
-> {
+  > {
   static async getInitialProps(ctx) {
     const { slug } = ctx.query;
     const api = new BlogApi();

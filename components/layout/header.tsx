@@ -12,7 +12,15 @@ export const Header = () => {
     <header className="bg-light">
       <div className="container">
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Big Bank Sports</NavbarBrand>
+          <NavbarBrand
+            href="/"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img
+              src="/static/logo.png"
+              style={{ height: "50px", width: "125px" }}
+            />
+          </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Menu />

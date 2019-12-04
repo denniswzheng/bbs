@@ -25,7 +25,7 @@ export const Footer = () => {
         </div>
       </div>
     </CustomFooter>
-  );
-};
+  )
+}
 
 Footer.displayName = "Footer";

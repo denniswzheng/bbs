@@ -1,15 +1,20 @@
 import React from "react";
 import { ErrorBoundary } from "../error-boundary";
 import { Header, Footer } from "components/layout";
+import Container from "react-bootstrap/Container";
 
 export const Layout = props => {
   return (
-    <>
-      <Header />
-      <ErrorBoundary>
-        <main className="container mt-3">{props.children}</main>
-      </ErrorBoundary>
-      <Footer />
-    </>
-  );
-};
+    <div style={{ position: "relative", minHeight: "100%" }}>
+      <div style={{ paddingBottom: "60px" }}>
+        <Header />
+        <ErrorBoundary>
+          <Container>
+            <main>{props.children}</main>
+          </Container>
+        </ErrorBoundary>
+        <Footer />
+      </div>
+    </div>
+  )
+}
